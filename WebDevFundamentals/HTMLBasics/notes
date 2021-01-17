@@ -1,0 +1,44 @@
+This is the notes for HTML Basics
+
+First we are going to create a index.html 
+next we are going to tell the browser that this is a html 5 document 
+
+we do this by typing <!DOCTYPE html>
+this is known as doctype declaration
+
+in previous versions the doctype declaration was really long
+but html5 solves this 
+
+also html is not a case sensitive language 
+but by convention we type everything in lower case expect DOCTYPE
+but this is just a convention
+
+Now under the <!DOCTYPE html>
+we use our html elements to define the structure of the page
+
+first tag we are going to use is the <html></html>
+this tag has a closing tag like most of the elements do 
+but some of the elements do not have a closing tag
+
+next up are the body and head tags
+
+the head tag is used to give information about the page 
+for example the title tag
+
+next up in the body tag we add elements that are going to show up on
+the page 
+
+we are going to use the image element <img>
+this element doesn't have a closing tag
+this means that this element can not have any child elements
+in older versions of html we use to have to write it like this 
+<img/>
+this meant that this was a self closing tag
+html5 doesn't require this 
+
+in the img we have 2 attributes src and alt
+with these attributes we can supply addition information about an element 
+the src attribute is used to specify the path to a image 
+
+alt is short for alternative text 
+used to show subtext if the image can not be displayed in the browser
