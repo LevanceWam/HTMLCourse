@@ -1,9 +1,9 @@
 /* making a refernce to the image element */
 img{
     /* setting the width of the image  */
-    width: 200px;
+    width: 100px;
     /* Setting this to half of the width gives us a circle */
-    border-radius: 100px;
+    border-radius: 50px;
     /* pushes the image to the left side of the text element */
     float: left;
     /* making space between the image and the text */
