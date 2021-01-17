@@ -1,0 +1,19 @@
+This is the notes for Inspecting pages using Devtools
+
+Remember that the DOM (Document Object Model)
+is given to us when the browser reads the html document 
+that is returned from the server the DOM is constructed
+
+if we use the developer tools in chrome
+and navigate to the element tab we can see the DOM
+
+here we can click on the elements we want to inspect and on the left side 
+we can see the styles applied to the element 
+
+we can enable or disable properties 
+change values 
+and more 
+
+A lot of Front-end devs use devtools to play 
+the styles and get the look that they want 
+once the exact styles and values are in they apply them in the constructed
