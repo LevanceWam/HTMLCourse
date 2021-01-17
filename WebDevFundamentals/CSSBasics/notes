@@ -1,0 +1,57 @@
+This is the notes for CSS Basics
+
+In the head element we are going to add another element called 
+style. (We are going to use a external css)
+
+this is where we would write our css rules 
+we are going to work on the image 
+
+so in the styles.css we are going to reference the 
+image element by typing img{}
+
+inside of the braces we write one or more css declarations 
+each declaration contians a property and a value 
+
+so we are going to change the width of the image
+the image is now smaller
+
+Lets try to make the edges of the image round
+we can accomplish this by using the border-radius property
+this will help the image look smooth
+
+*Cool Tip*:
+If we set the border-radius to half of the width we are going to
+get a circle
+
+Now the everything is set vertically
+lets say we want the image to the left of the text
+we can do this by using float 
+
+now we want to add some space between the image and the text
+so we can use margin here to help us out 
+
+
+now lets make the text bold
+we can use the font-weight property
+now both of the paragraph text is bold
+
+but what if we wanted to apply this style only to the username?
+we would have to seperate the 2 paragraph elements
+this is where we can give the element a attribute called class
+
+class is short for classifaction and we can use this attribute
+to put this element inside a different class or different catergory
+
+now with the old rule we had we were targeting all of the 
+paragraph elements on the page 
+now we are going to change it so that only paragraph elements witht the 
+class username is affected
+
+so we get rid of the p and add .username
+this will effect all of the elements that have this class
+whether they are paragraphs or not
+
+using this declaration p.username
+only effects paragraphs with this class
+
+notice that css has a different syntax(grammar) than html

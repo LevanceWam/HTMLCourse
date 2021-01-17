@@ -46,7 +46,7 @@ We use version control systems to track our project historty and to work collabo
 
 Important concepts that we need to know to be a web developer.
 
-URL: Uniform Resource Location.
+_URL_: Uniform Resource Location.
 This is basically a way to locate a resource on the internet. Resources can be web pages (HTML Documents), Images, video files and etc.
 
 Once we type in the URL and hit enter there are 2 pieces in work here. The browser also known as the client and the computer or computers that host the target website known as the server. We know this as the client server model.
