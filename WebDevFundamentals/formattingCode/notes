@@ -1,0 +1,13 @@
+This is the notes for formatting code
+
+An important thing to know about browsers is that they ignore the 
+whitespaces in our code so everything can be a single
+line and it will still work
+
+But, formatting is important when it comes to reading and maintaing code 
+we want it to look nice, consistain
+this is important when we start working on teams 
+because everyone has their own way of formatting their code
+
+So we can use something like prettier to help us
+keep our code nice 
