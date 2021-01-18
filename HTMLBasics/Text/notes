@@ -1,0 +1,64 @@
+This is the notes for Text
+
+We are going to take a look at the most common elements when
+dealing with Text
+
+we learned about the paragraph element
+which is used to display some text
+
+so to empithize some text we would use the em element 
+it represents stress emphasis of its contents
+so when ever we want to emphasis something we wrap it in the em element 
+
+so By default browsers render em as Italics
+but this does not mean that we are allowed to Italicize 
+everything with the em element
+
+remember the Purpose of this element is to emphasis content 
+em Helps search engines find important content on our sites
+
+If we want to style are paragraphs to look like italics we use CSS
+so lets try to make em unitalic and red 
+
+now back in older versions of html 
+we use to use the <i> italic element 
+but it is deprecated because html is not ment for styling 
+only for structing content 
+
+Another similar element is strong. Represents strong importance, seriousness,
+or urgency for its contents this also helps with search engines 
+the browser renders this to look bold by default
+where we use this really depends on the context of our content 
+
+another deprecated element like the strong element is the bold element
+like the italic element it should not be used 
+
+
+Headings:
+In html we have 6 headings h1-h6
+
+Heading 1 represents the most important heading 
+heading 6 is it least important 
+
+A common mistake that is made is that the heading are choosed based 
+on their size so people just use a heading that is benefical to them 
+
+this is not how we are suppose to use headings 
+this is because the size can be changed with CSS
+
+headings should be used to create a hierachy
+
+every web page should have ONE AND ONLY ONE H1 ELEMENT 
+this heading represents what this page is all about 
+having multiple h1s can confuse search engines 
+
+after we use h1 we should use h2 we should not skip
+
+so lets say we wanted to break up this into sections
+one for html and one for css we should use 2 different h2
+
+now if we wanted to add sub-sections we should use h3 elements
+
+this helps us create a hierachy
+the better we can represent our structure of our document using 
+html the better search engines can read and understand our content 
