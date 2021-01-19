@@ -1,0 +1,47 @@
+This is the notes for Images 
+
+We are gonna talk about embedded images 
+so we are going to use a image from unsplash.com
+
+https://unsplash.com/
+
+we are going to download a small image
+we are going to want to rename the image because this helps out with 
+SEO this this is a small SEO tip search engines can better understand and index our pages 
+
+Now we use alt text attribute to add description to our image 
+this is highly recommended to do because it helps makes our page accessible to
+to visually impaired people they use screen readers to read the website to them 
+so alt tell them what is on the page 
+
+Please do not write something like image 1 or anything non descriptive
+
+using the alt text attribute also helps with SEO
+
+and if the image cant be loaded then the alt is shown
+
+Resizing images:
+we can use css to resize our images 
+so we are going to set the height and the width for this image 
+
+now there is a tiny problem the image looks squashed
+this is because we are dealing with a rectanglaur image 
+but we are converting it to a square image so it is vertically squashed
+
+so if we disable the height property (in dev tools)
+we can see that it is no longer squished
+
+to solve this problem we have a new property called object-fit
+most of the time we use the value cover 
+so the image covers its contianing box
+
+Conceptually there is a containing box around every element 
+in html document, we can not see this box but the browser uses this box to figure out 
+how the page should be displayed 
+
+so for the img element the we set the width and the height of the box 
+and in this box we are trying to insert our image 
+so when we set the value to cover it is going to resize the image and potentially cropped 
+so it covers the entire containing box
+
+so in the dev tools we can play with all of the values and see which one works the best for us 
