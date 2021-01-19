@@ -1,0 +1,52 @@
+This is the notes for Hyperlinks
+
+To create links to other pages and sites we use the
+achor element <a>
+
+every achor element needs a href: (hypertext reference)
+we are going to make a url to a page called about in this folder 
+
+so in the href we can link to a relative or absolute url
+
+A relative url starts from the current page 
+so since index.html and about.html are in the same 
+folder we can just right the name of the file
+
+now if the file was in a different folder 
+this still counts as a relative url 
+
+we can also use relative urls for our img src 
+
+in short:
+relative urls start from the current page 
+and then it goes somewhere else 
+
+absolute urls:
+There are times we are going to be working in heavily nested 
+folders and to keep going a level up for our hyperlinks can be a little messy
+
+This is where we can use absolute urls 
+so we start with a "/" this represents the root of the site 
+
+back in html 
+we can link to non-html documents like images, pdf, and powerpoints 
+so we are going to link a image
+now we can prompt the user to download the image by 
+adding the download attribute
+now when we click the link the image will download instead of being on the screen
+
+We can also link to different parts of the page 
+so we are going to link to the css section on this site 
+
+we can give the h2 for css a unqiue identifer so we can give it make it a link
+so we are going to set the id attribute to css 
+this is what we call a fragment or a place on the page 
+now we are going to add a link to the fragment 
+
+to jump back to the top of the page in the href attribute add #
+what is the difference between hyperlink and link
+
+link is just the address the url the location of the target page 
+hyperlink is the element the user can click on to navigate to the target page 
+
+
