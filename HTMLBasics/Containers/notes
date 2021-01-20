@@ -1,0 +1,50 @@
+This is the notes for containers
+
+Quite often we need to group a bunch of elements 
+for styling purposes
+
+https://www.adobe.com/
+go here for the following examples
+
+for example a navigation bar on a site 
+it holds items, images and more 
+so the navigation bar is a contianer for those elements 
+
+another example:
+a hero unit
+it has a header, some text, links and a background image 
+
+containers are used a lot in web development 
+lets see how we can work with them 
+
+in html we have a few container elements
+the most commonly used one is div element (division)
+
+this element does not have any visual appearance 
+even if we give it child elements it will still show nothing 
+
+but we can edit it in css
+so the best way to edit a div in css is to give the div a class
+then we are going to target the class in css
+now we are going to add a background color property
+
+now we can see that the div (contianer) is filling up the width of the page
+even though it has very little content
+
+this is happening because a div is a block-level element 
+
+#Block-level elements:
+block level elements always start on a new line and fill up the entire availiable space 
+so if we duplicate our div it is going to generate on a new line 
+
+we can use css to change their width
+
+#Span Element:
+another generic container element called span
+which is often used to style text
+the span element is a like a div but it is  not a block-level element div
+
+A span element is a inline element so it is not going to take up the entire width of the page 
+
+in html5 we have a couple more container elements that are more descriptive 
+that will be covered in the next lecture 
