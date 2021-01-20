@@ -1,0 +1,93 @@
+This is the notes for ProvidingCSS
+
+there are 3 different ways to provide styles
+
+Embedded stylesheets:
+    this is including the styles in the html document 
+
+External stylesheets:
+    this allows use to write our styles in seperate files 
+
+Inline styles:
+    we can apply a style directly to a element 
+
+##Embedded stylesheets:
+
+in our html we are going to be working with some paragraph elements
+now currently we are working with a Embedded stylesheet
+but there are 2 problems with these
+
+1. the first problem is that they are not scalable so if we have multiple pages 
+it is likely that we want our styles to carry over with this approach we have to copy all of the 
+styles here and place them on every single web pages
+this maean if we change one thing in one file we have to do it for every file
+
+2. the second problem is that it violates a very important principle in computer science
+called seperation of concerns. 
+
+we want to have different modules for different concerns 
+html is for structuring the web page and css is to style them 
+so we want to have them doing there own thing
+
+##External stylesheets:
+
+This helps us organize our code 
+so we can take all of the rules we have and place them in a seperate file 
+so we create a file called style/styles.css and place our rules there
+
+now we need to link the html document to the External stylesheet
+to so this we need to use the link element <link>
+
+this element has 2 attributes rel (relationship) this determines 
+the type of resource we are linking this document too 
+next is href which we are familiar with 
+here we can provide a relative or absolute url
+
+###Clarifications:
+
+the link element is what we call a self closing element 
+it has a single tag that is self closing 
+
+## Overriding:
+
+now does this mean we never use embedded styles?
+no sometimes we are going to want to override the styles that are defined in a 
+External stylesheet
+
+so if we wanted to change the color of this paragraph on this page only 
+we use the style element and make the rule 
+
+so we can see that embedded stylesheets overide the rules in a 
+External stylesheet
+
+## Inline styles:
+this is the 3rd way to apply styles 
+to a particular element 
+
+so out of the 2 paragraphs we have on the page we are going to 
+target the first one and we want to make it a different color
+
+every html element has a style attribute and this is where we can write one or more styles 
+one add more rules by seperating them with semi-colons
+
+now inline styles are a little noisy and they violate the principle of seperation of concerns
+so we should try to avoid using that 
+
+there are better was to target a specific element 
+we ca give that element a id (unique identifier)
+
+then we can define a rule for the paragraph
+
+## Override order:
+this is the priority order from greatest to least
+
+inline -> embedded -> external
+
+inline will always show up above the others 
+
+*IMPORTANT*:
+The priority of external stylesheet and the embedded stylesheet is interchangeable depending 
+on which one comes last
+
+So is the external stylesheet is last the embedded stylesheet will be override
+the same is true for vise versa
