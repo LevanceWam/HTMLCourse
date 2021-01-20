@@ -1,0 +1,29 @@
+This is the notes for NormalizingCSS
+
+as we already know we have a good bit of browsers out 
+and unforunately some browsers render html elements differently
+
+to address this issue we use a popular stylesheet called 
+Normalize.css this stylesheet it provides basic default styles for some html elements 
+so they look exactly the same way across different browsers
+with this we don't have to waste time dealing with rendering issues across different process
+
+following this link: https://necolas.github.io/normalize.css/
+we can download the latest version
+(we can aslo install this using npm install normalize.css)
+
+once we have it downloaded we are going to move it into a 
+css folder along with styles.css
+
+##Inside of normalize.css:
+Here are some of the things that are going on with in the file 
+
+we have a html rule that sets the line height of the html element
+because different browsers have different values for this property
+
+it also sets the margin of the body to 0 and there is no longer going to be space around the content of the body element
+
+but we will add it back in our css file 
+
+form here on out we are going to be using 
+normalize.css
