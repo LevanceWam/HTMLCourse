@@ -1,0 +1,41 @@
+/* body is what we call a selector this is how we select a element */
+/* here we are selecting a element by its type which in this case is the body element */
+body{
+    margin: 10px;
+}
+
+/* here we are selecting an element by it's id */
+#products{
+
+}
+
+/* selecting a element by their class */
+.product{
+
+}
+
+/* selecting a element using attributes */
+/* here we are checking for the existence of the target attribute */
+/* if we wanted to target the value just add it to the selector */
+a[target]{}
+
+a[target="_blank"]{}
+
+/* there is a problem with this */
+/* if the link gets changed or updated this won't work */
+/* code like this is very fragile */
+a[href="https://google.com"]{}
+
+/* Here we are going to make the the rule a little more flexible */
+/* by checking for the existence of a word */
+/* we have to prefix the = with a *  */
+a[href*="google"]{}
+
+/* here we are checking to see if the attribute starts with a given value by using ^ */
+a[href^="https"]{}
+
+/* this is to check to see if it ends with something  use the $*/
+a[href$="google"]{}
+
+/* we can combine multiple conditions */
+a[href^="https"][href$=".com"]{}
