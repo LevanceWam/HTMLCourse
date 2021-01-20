@@ -1,0 +1,53 @@
+This is the notes for HeadSection
+
+We use the head section to give the browser
+and search engines information about our web page
+
+*Heads up*
+in VScode if we type ! then hit Tab
+we generate a html boilerplate
+
+in the head section we have a couple 
+of meta elements for giving information about this web page 
+the first meta element is for defining the character set
+"UTF-8"
+
+Computers do not understand characters like A B C 
+they only understand numbers which is represented in the 
+binary format 0s and 1s
+
+By using character sets we map a character to a 
+numerical value
+
+ASCII was the first character set made 
+ASCII only represents the characters in the english language 
+
+the one that we use the most often is UTF-8
+This can represent almost all characters in the world
+
+under the meta element dealing with the charSet
+
+we have another character set that configures the viewport
+the viewport is the visible area of the web page
+with the element we are defining the intial width and zoom factor of the viewport 
+we need this element so that our page looks good on all devices 
+
+so as good practice every page needs to have these 2 meta elements 
+
+there are additional meta elements 
+
+for example:
+
+we have a meta element to define keywords on a page 
+we can type multiple words here
+In the pass these keywords where used heavy for SEO (Search Engine Optimization)
+But these days search engines do not put so much weight on these keywords
+but we can still use them as keywords to represent this page 
+
+Another meta element for the description of the page 
+using this element we can type a description that will appear on 
+google or other search engines when someone searchs for the website
+
+Take Away:
+this is the purpose of meta elements with these elements
+we can give information about a webpage 

@@ -1,0 +1,36 @@
+This is the notes for Lists
+
+In html we have 3 types of list elements:
+ul: unordered list 
+ol: ordered list
+dl: description list
+
+the type we use three most is ul
+this is used to showcase a list of items where the order does not matter
+
+a common application for this element is for implementing 
+a navigation menu quite often these navigation menus are implemented using unordered list
+so we are going to make a navigation menu using a ul
+inside of the ul we are going to use a li which is a list item 
+
+by default li are displayed by using bullet points
+but the bullet points are a mater of styling we can 
+change this with css
+we can css so lay them horizontally but we will look at that later
+
+now we can nest list to create a hierarchy
+so in the courses item we are going to add a ul list 
+
+Ordered list:
+In contrast to a ul we have ol where the order of the items 
+do matter 
+an real world example of this would be a recipe site 
+
+description list:
+we use a dl for implementing a glossary or displaying meta data
+we can have a term and details about that term
+
+now we might wonder how often do we implement a glossary
+well here is another real world application
+lets say we wanted to display meta data about the course 
+

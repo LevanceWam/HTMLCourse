@@ -1,0 +1,31 @@
+This is the notes for Entities
+
+Some characters in html are reserved and 
+we have to use a special notation to use them
+
+for example we wanted to wrap the text html with angle brackets
+if we tried to do this normally we VScode thinks we are trying 
+to use a element 
+
+to get around this we use HTML Entities
+all of these Entities start with & and end with ;
+inbetween these 2 we type some characters that determine the type 
+of the html entity
+
+entites:
+<: &lt;
+>: &gt;
+copywrite symbol: &copy;
+
+now we don't need to know all of the entites because we are not
+going to be using all of them but here is a website to look them over 
+
+https://dev.w3.org/html5/html-author/charref
+
+so we are going to look at another entity but we need some dumby text
+so make this inside a paragraph element type
+loremNumberofWords -> lorem50 then  tab
+
+now imagine somwhere in the text 2 words need to be stuck together 
+we can get rid of the line break by using
+nonbreaking space: &nbsp;

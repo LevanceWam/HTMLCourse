@@ -1,0 +1,53 @@
+this is th notes for Video and Audio
+
+In html we have great support for embedding video and Audio
+for example on sketch.com this is a wonderful
+example of this but it does not have video controls
+
+so we are going to learn how to embed video and audio to our web pages
+so we are going to go to:
+https://www.pexels.com/
+This is a great place to use free photos and videos
+
+we are going to download the HD file because it is smaller
+we don't want to embed a large file because this can give the user a 
+bad experience watching the video
+
+to embed the video we are going to use the video element 
+just like a img we can use a relative or absolute url
+
+now by default we get a image of the video and the image is shown at the 
+full size this gives us a horizotal scroll which is bad
+so we are going to use css to change the width of the video
+We do not need to set the height because the browser will use the aspect ratio
+to do it for us 
+
+now we are going to add the control buttons 
+to do this all we need to do is add the controls attribute
+
+the controls attribute is what we call a boolean attribute
+some people believe we can set this attributes to true or false but this is not correct 
+if we set controls to false it is still going to show in the browser
+
+This is how they work:
+The presence of a boolean attribute represents true the absences of the attribute
+represents false
+
+we have another boolean attribute called autoplay
+this automatically starts the video
+
+another one is loop
+this will automatically loop the video
+
+now browsers these days have exellent support for the video element 
+but there is one browser that does not support it 
+
+so if we go to https://caniuse.com/
+we can see how different browsers support different html elements
+and css features
+
+so for the browsers that do not support videos we give 
+them a fall back text
+
+We have another element for audio and it is exactly the same as audio
+ 

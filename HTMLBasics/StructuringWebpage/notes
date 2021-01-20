@@ -1,0 +1,49 @@
+This is the notes for structuring a web page
+
+we are going to look at the semantic elements for structuring web pages
+most web pages have at least 3 building blocks:
+- header
+- main content
+- footer
+all of these are html elements
+this is a pretty common structure
+
+#aside element
+sometimes we can have a sidebar for advertising 
+content not directly related to the main content
+this is the aside element
+
+#header:
+often we have a navigation bar with a list 
+of links 
+
+#footer:
+the same can be done for the footer
+so we can have multiple navigation elements on the same page 
+
+#main element:
+    #section element:
+sometimes in the main area we have multiple sections 
+with the section element we can group related content
+now every section should have a heading which is often a h2 
+but it depends where we are in the heading heirarchy
+
+so if we don't supply a heading we can get a validation error for this section
+then inside of the section we can use a article to represent independent content
+
+now we need to clarify something!
+this is not the only way to structure a web page this is an example 
+
+#Recap:
+<main>: used to represent the main content of the page.
+every page can only have one main element 
+* if we use more than 1 main we get a validation error
+
+<section>: used to group related content.
+
+<header>: used to represent introductory content
+which can belong to the page or a section or article
+
+<footer>: can be used in the same way as the header
+
+<aside>: used to represent content not directly related to the main content

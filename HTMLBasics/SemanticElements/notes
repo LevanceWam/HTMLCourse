@@ -1,0 +1,66 @@
+This is the notes for Semantic elements
+
+In the last lecture we went over that 
+divs and spans are generic containers 
+
+but HTML5 introduced a couple of elements that are more descriptive or more 
+meaningful. they are called
+
+#Semantic Elements:
+article
+figure
+mark
+time
+
+so where ever possible we should use these new Elements
+instead of the generic containers because this helps search engines better understand our pages 
+and what they contain. 
+
+#article element:
+so lets say we wanted to represent a blog post
+so the generic way would be to use a div with the class of article
+with some text
+
+now there is nothing wrong with this approach but we can make this better 
+more meaningful by using  semantic elements 
+
+in html5 we have a element called article that is used to represent articles or post
+we can use this element to make the markup more meaningful to search engines 
+
+now the article does not need to be a blog post or newspaper article
+it can be:
+"An independent, self-contained content"
+Examples:
+forum post
+comments
+reviews
+product cards
+
+on adobe.com we can see 3 different representation of product cards
+each of them code be a article element 
+
+an article can contain one or more figures, img,
+tables, list and so on.
+so we can add a img in the article 
+but to make it more meaningful we can wrap it inside of a figure 
+
+#figure:
+the figure element is just a contianer for figuares
+it does not have any visual characteristics
+
+figures can optionally have a caption
+it can be above or below the figure 
+this is done with the figcaption
+
+#mark element:
+Now sometimes we want to highlight our text
+so in the last lecture we used the span element 
+but in html5 we have a new element called mark element
+this does the samething as our highlight class from the last lecture 
+
+#time element:
+Now most articles have a published date and time 
+so below the heading we can do this 
+
+now optionally we can pass the datetime attribute 
+we have to follow the format
