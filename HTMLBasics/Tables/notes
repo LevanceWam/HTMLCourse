@@ -1,0 +1,75 @@
+This is the notes for Tables 
+
+we are going to make some tables 
+
+We acomplish this by using the tables element 
+we can use this to represent tabluar data
+
+in the past we useto use this for laying out pages
+this is considered bad practice because we have better ways of doing this now 
+
+#Rows:
+to define a row we use the tr element 
+in this element we can have one or more cells 
+which can be:
+data cells 
+or 
+header cells
+
+header cells are labels that describes what each column represents
+all the other cells are know as data cells
+because they contain data
+
+now by default the table does not have any styles 
+but we can use css to add them
+so lets do this 
+
+We are going to add a border to the table and the td (table data cell)
+now we do not want to repeat the same rule 2 times
+duplication in code is bad
+
+this is why we have the DRY principle in software engineering 
+DRY -> Don't Repeat Yourself
+
+so lets fix that by adding td to the table rule 
+
+now we have another problem there is some spacing that is causing the table to 
+look ugly with the borders
+
+so lets get rid of it 
+we do this with the border collapse property
+
+now we want to give some space between the borders and the cells 
+
+#Header Cells:
+now we are going to add a header to the cells
+so we add another row and add 2 header cells
+
+notice that the th has a different style than the td
+
+#Improving the table:
+we can make our tables more search engine friendly
+and better for search readers 
+we want to let them know thta we have 2 sections within
+this table 
+
+a heading and a body
+We can accomplish this by using the thead and tbody elements 
+we still get the same output but the markup is more meaningful 
+to search engines and screen readers
+
+this is called semantic html
+semantic means meaningful
+
+in the thead we can have multiple Rows
+
+now optionally we can add a footer
+after tbody we add tfoot
+
+Question:
+What is the difference between header and data cells in terms of styling 
+Ans:
+    The text is bold for the header and the text is align in the center
+    where as the td is text align to the left
+
+we can fix that with css

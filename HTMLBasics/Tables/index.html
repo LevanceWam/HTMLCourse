@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        /* we are applying this style to the table and the td element  */
+        table,
+        td,
+        th {
+            /* adding a border to the table */
+            /* this property need 3 values */
+            /* first value is the thickness of the border */
+            /* second is the style of the border */
+            /* third is the color */
+            border: 1px solid grey;
+
+            /* this collapses the borders in neighboring cells */
+            border-collapse: collapse;
+
+            padding: 5px;
+        }
+
+        tfoot {
+            /* move the text to match the td */
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!-- setting the span of the column -->
+                <th colspan="2">expenses</th>
+            </tr>
+
+            <tr>
+                <!-- table header cell -->
+                <th>catergory</th>
+                <th>amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- the table row -->
+            <tr>
+                <!-- table data cell -->
+                <td>marketing</td>
+                <td>$100</td>
+            </tr>
+
+            <tr>
+                <td>accounting</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th>total</th>
+            <th>300</th>
+        </tfoot>
+    </table>
+</body>
+
+</html>
