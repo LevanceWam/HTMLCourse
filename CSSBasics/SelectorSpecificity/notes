@@ -1,0 +1,72 @@
+this is the notes for SelectorSpecificity
+
+Quite often we find ourselves in a situation were 
+we have more than one rule targeting a element 
+and these rules can have conflicting styles 
+
+so lets take a look at how the browser figures out what rules should be applied
+
+so we created a heading with a class and in the css 
+we wrote 2 rules that target the heading element 
+
+now which rule will be applied?
+this is where SelectorSpecificity (weight) comes into play
+each selector has a weight 
+so if multiple rules target a element 
+the browser will use the one that has the most weight 
+
+we have something called the specificity triangle 
+this is how it goes:
+ID selector
+    this is because we can not have 2 elements with the same id 
+    the id selector is very specific 
+
+after this we have:
+Class & Attribute selectors
+    these selectors are less specific because we can have multiple elements with
+    the same class or attributes
+
+finally we have:
+Element selectors  
+    because we can have many elements of a given type 
+
+so in our css the light class is more specific so it will be the one to be applied 
+so if we take a look in the devtools and select the heading 
+we can see the rules applied to the heading 
+
+the h1 rule that would turn it blue is crossed out because it is being overriden by the 
+class of light 
+
+now lets target the h1 element with a id selector
+this will be the most specific so the rules for this will be applied 
+
+*Question:
+    what will happen if we have 2 selectors with equal specificity or weight
+    Ans:
+        The rule that comes last
+
+In VScode we can hover over the selector and see its specificity in the tooltip
+the numbers represents this:
+1st: ID selectors
+2nd: class/attribute selectors
+3rd: element selectors
+
+*Question:
+    how do we prevent the id selector from overriding the element selector?
+    Ans:
+        there are 2 ways to do this
+
+        1. One solution is to use the important key word.
+        we add it to the end of a property. when this key word is applied 
+        other rules are discarded
+
+        So we want to avoid using this using the important keyword
+        is consider a bad practice because it can make your css messy and hard to maintain
+
+        2. the second solution would be to make a rule that has more weight to it than
+        the one. this can be accomplished by adding more than one selector to a rule 
+
+        another way to overide is if the element is inside of a container we can target the container then the child element
+
+
+but it is important not to go overboard and make rules that are 2 specific

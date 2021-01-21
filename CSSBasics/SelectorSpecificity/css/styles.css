@@ -1,0 +1,27 @@
+body{
+    margin: 10px;
+}
+
+h1{
+    color:dodgerblue;
+}
+
+/* this rule styling will be applied because it is more specific than a element selector */
+.light{
+    color: firebrick;
+}
+
+/* because this is the most specific selector this rule will be applied  */
+#products{
+    color: forestgreen;
+}
+
+/* this rule will override the id selector because it wieghs more  */
+h1#products{
+    color: violet;
+}
+
+/* this rule will be applied because it was declared last */
+/* #products{
+    color: burlywood;
+} */
