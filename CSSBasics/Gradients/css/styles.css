@@ -1,0 +1,25 @@
+body, div{
+    margin: 10px;
+}
+
+/* creating a gradient that starts from the top left to the bottom right corner */
+.box{
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(to bottom right, dodgerblue, yellow);
+}
+
+/* using degrees to decide the direction of gradient */
+/* we can aslo decide how much space the gradient take */
+.box2{
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(45deg, dodgerblue, yellow 50%,tomato);
+}
+
+.box3{
+    width: 600px;
+    height: 200px;
+    background:radial-gradient(circle at top left,white, green);
+}
+
