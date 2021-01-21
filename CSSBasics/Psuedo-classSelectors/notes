@@ -1,0 +1,70 @@
+this is the notes for Psuedo-classSelectors
+
+there is another group of selectors called 
+Psuedo-classSelectors
+
+so lets say we want to make the first paragraph
+font bigger than italic
+
+one way to do this is to give the paragraph a class 
+now remember this is going to apply to any element that has this class 
+
+now what if we only wanted this to be applied to our articles 
+then we code just add the article selector next to the class
+to give it a context
+
+but this makes adding the class to the paragraph element Unnecessary
+so we didnt have to give this element a class 
+
+in css we have a bunch of Psuedo classes that are applied by the browser
+Psuedo classes are not real classes that we define. they
+are classes that are applied by the browser by default 
+
+##first-child selector:
+so after the article selector we are going to use a Psuedo class first-child
+this will give use the same result as using a class 
+
+the first-child selector is useful but a little fragile 
+
+so if we add another element at the top of the hierarchy 
+it will be the first child and will get the styling 
+
+##first-of-type selector:
+this is another selector
+this selector will apply styles to the first occurance of elements that are different types
+
+so out of the 2 paragraphs we have the first one will get the styling 
+now we can specify the type of element that can be targeted by adding it to the front of
+the selector
+
+we have 2 more similar ones last child and last of type 
+
+##last-of-type & last-child selector:
+both of these will apply styles to the last element 
+
+both of these are fragile because if we are using a rule like this 
+article p:last-of-type or last-child {
+    font-size: 140%;
+    font-style: italic;
+}
+
+if we have an element that is not the target element last the styles will not 
+be applied this is because the browser is looking for the targeted element to be last 
+
+##nth-child selector:
+now sometime we are going to want to style elements based on their position
+in a container 
+like in a table or a list and e want to highlight all the 
+odd items 
+
+so we are going to make a list and do this 
+
+this selector is like a function in between the () we can pass a value or a argument
+we can pass:
+odd 
+evem
+3n (depending on the number that goes before n it will select every third item)
+
+
+##<a> psuedo selectors:
+we have a selector for visited links 
