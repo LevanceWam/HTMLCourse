@@ -1,0 +1,39 @@
+this is the notes for Shadows
+
+in css we can easily add shadows around elements
+using box shadow property
+
+##box-shadow property:
+we have to supply a few values
+1st value:
+    the horizonital distance to the element 
+    using a positive value will have the shadow to the right 
+    negative to the left
+
+2nd value:
+    this is the vertical distance from the shadow to the element 
+    positive to make it go down
+    negative to go up
+
+3rd value:
+    this can be either making the shadow softer
+    or color
+
+    the softness or the blur comes before the color
+
+now since we move the shadow to the left and down
+the top and right do not have a shadow 
+
+so if we wanted to have a very soft shadow it is a better idea it have it below the element 
+so we add 0 for the first 2 values and this solves the problem
+
+##Adding shadow to text:
+we can also add show to text 
+so we add a heading and change the color of the text to match the background
+then we add the text-shadow property to the heading 
+
+now there is a problem
+the grey shadow is not mixing well with the blue background
+its kind of all 
+
+a cool trick to fix this is to use a semi off black using rgba
