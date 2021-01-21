@@ -1,0 +1,13 @@
+This is the notes for Colors
+
+In css we have a few different way
+to represent colors:
+- Named colors
+- RGB (red, green, blue)
+- RGBA (red, green, blue, alpha-channel)
+- HSL (hue, saturation, lightness)
+- HSLA (hue, saturation, lightness, alpha-channel)
+- Hexadecimal (0-9, a-f)
+
+we are going to see this in action using a div
+

@@ -1,0 +1,26 @@
+body{
+    margin: 10px;
+}
+
+/* here we are combining two different selectors */
+/* we call this a relational selector */
+/* this particular one is called a desecendant selector */
+/* this will affect any paragraph in the products section */
+#products p{
+    color: orange;
+}
+
+/* if we wanted to style only the first paragraph element in the section we can do this */
+#products > p{
+    color: steelblue;
+}
+
+/* this is going to select the paragraph element that is directly after the section */
+/* #products + p{
+    color: goldenrod;
+} */
+
+/* this will affect all of the paragraphs outside of the section */
+#products ~ p{
+    color: steelblue;
+}

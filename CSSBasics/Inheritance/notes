@@ -1,0 +1,41 @@
+This is the notes for Inheritance
+
+One of the most important concepts in css that we need to 
+understand is Inheritance.
+
+this means that some css properties by default 
+inherit values from there parent 
+
+we are going to use a paragraph element and a strong element 
+as a example 
+
+now if we set the color of the paragraph element the 
+strong element will inherit the color of the paragraph because it is a 
+child element 
+
+this allowed us not to write a rule for strong to make it the same color
+Inheritance helps us write less code 
+
+*Question:
+    What if we wanted to stop inheritance
+    what if we didn't want to inherit the value from paragraph?
+    Ans:
+        in the strong rule we set the value to intial and this will 
+        set the color of the strong element to it's default
+
+## Properties that do not get inherited 
+so in the paragraph we are going to add a border 
+now when we look at the html we see that there is a border around the 
+paragraph but not the strong element 
+
+this is because it wouldn't make make sense 
+to add a border to child elements it would look weird 
+
+But, there is a way you can inforce them 
+in the strong rule we can add the border property
+and give it a value of inherit 
+
+*Just a tip:
+Generally speaking the properties that deal with typography
+are the ones that are inherited
+so property that change the font size weight etc 

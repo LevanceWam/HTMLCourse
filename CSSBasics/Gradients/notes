@@ -1,0 +1,43 @@
+this is the notes for Gradients
+
+now that we know about colors we are going to move to gradients 
+with gradients we can create beautiful transitions between one or 
+more colors 
+
+Gradients are technically images 
+to set a gradient we cann not use the background-color property
+we need to use the background-image property or the shorthand
+background property
+
+##background property:
+we can set this to either a image or color
+to make a gradient we pass the liner-gradient function
+and pass 2 colors 
+
+###linear-gradient
+now by default the direction of the transition is from top to bottom 
+but we can change this.
+for the first agrument we can provide a direction
+we can go to the right or left 
+and we can target corners by adding top or bottom
+
+we can also target the direction by degrees
+We can also determine the amount of space a color takes on the gradient by adding a percentage next to the color
+this is all for linear-gradients
+
+in CSS we have another kind of gradient called 
+radical-gradient
+now we can supply 2 colors like earlier 
+and the gradient starts in the middle and comes out like a circle 
+
+now we have this circle shape because the div is a square 
+but if we change the width we get a Eclipse
+but we can pass the word circle as a agrument to get a circle again 
+and we can change the position of it 
+
+this is how we create gradients 
+
+Now there are tools online that can help us 
+create these gradients and we can copy the css 
+
+here is one: https://cssgradient.io/

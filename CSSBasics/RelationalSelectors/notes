@@ -1,0 +1,49 @@
+This is the notes for RelationalSelectors
+
+We are going to learn how to select elements based on their 
+relation ship with other elements
+
+lets say we want to style the paragraph element inside of the section element 
+one way to do this is to use a id or class
+but there is another way 
+
+we can start from the section and then go inside and target the paragraphwith this approach
+we dont need to add a id and the code will be cleaner
+
+so all we have to do is go into the stylesheet 
+and write the selector for the id followed by the paragraph
+
+so this is an example of a RelationalSelector this one 
+in particular is called a Descendent selector
+
+Now if we wanted to only change the color of the first element in the section 
+we would have to add a > this is one of the relational selectors we can use 
+
+another relational selector selecting sibling 
+all we have to do is add a plus between the selectors
+
+now if we were to add another paragraph element it is not going to be affected 
+but if we wanted to affect all of the paragraphs out side of the section 
+use a ~
+
+##RelationalSelectors info:
+they help us write cleaner markup 
+
+but there are 2 problems with relational markup we need to know about 
+1. they can be fragile.
+    This is because they are dependant on the location of the elements in the dom
+    so of the elements are moved things will break
+
+2. they are not as fast as basic selectors 
+    we aren't going to be worried about this and the changes are not "noticable"
+    we can't tell the different
+
+    This is depenedant on how the browser renders these selector 
+    the browser reads this from right to left so it will get all of the 
+    paragraph elements first then it checks to see if that element comes after the section with the id
+
+Again this isn't a very serious thing so we do not need to 
+optimize ahead of time
+
+there is a saying in computer science
+"premature optimization is the root of all evils"

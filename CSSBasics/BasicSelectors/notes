@@ -1,0 +1,38 @@
+This is the notes for BasicSelectors
+
+##Selectors
+In css we have a few different ways to select elements for
+styling purposes. 
+We can select them by their:
+- Type
+- ID
+- class
+- attribute
+
+So we have seen this in action but we are going to go over it again
+and get the terminology correct
+
+##terminology:
+
+- Selector:
+    A selector is an element we choose to select in css
+    it is called a selector because we are selecting a element to apply rules to 
+    in styles.css body is a selector and we are selecting it by its type the body element 
+
+    We can also use id's as a selector
+    the same can be done with classes
+
+    *Question:
+        What is the difference between the id and class attributes?
+        Ans: you can not have the same id for multiple elements
+        you can only have one element for one id. But you can have one 
+        class for multiple elements. id's have to be unqiue
+
+    A metaphor to help us rememeber.
+    In the real world we can not have 2 people with the same passport #
+
+    Moving on we can also select elements by their attributes event though this is not 
+    common but there is a chance we will see it in someone else's code
+
+    so lets say we want to target all of the <a> with a target attribute
+    

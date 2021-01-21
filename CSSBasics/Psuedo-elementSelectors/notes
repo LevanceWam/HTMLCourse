@@ -1,0 +1,34 @@
+this is the notes for Psuedo-elementSelectors
+
+so lets say we want to style only a part of a element 
+like the first letter or the first sentence  
+
+this is where Psuedo element selector help
+
+##Psuedo element selectors:
+
+so we are going to choodse the element we want to target 
+in this case p
+
+so for this we need to use double colons and the selector first letter
+::first-letter
+
+with Psuedo-elementSelectors we use :: 
+with Psuedo-classSelectors we use :
+
+*Question:
+    what is the difference?
+    Ans:
+        in a Psuedo-element we use it to stylw part of an element. e.g first letter
+        with Psuedo-classes we use them to style elements in a particular state. e.g hovered achor
+
+another Psuedo element for selecting the first line of a element
+it is first-line
+
+another is the ::selection for highlighting text
+
+another is inserting content before the content of a element
+so if we wanted to insert something before a certian element on every page we can do this
+this is done with ::before
+
+::after is similar but is added at the end 
