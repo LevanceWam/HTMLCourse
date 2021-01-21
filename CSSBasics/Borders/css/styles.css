@@ -1,0 +1,13 @@
+body{
+    margin: 10px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    border: 10px solid teal;
+    border-top: 20px solid teal;
+    border-width: 10px 20px 10px 20px; /* trbl */
+    border-radius: 100%;
+}

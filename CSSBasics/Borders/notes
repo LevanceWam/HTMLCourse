@@ -1,0 +1,47 @@
+this is the notes for Borders
+
+lets take a look at the border property in more detail
+
+this property takes 3 values 
+1st. for the thickness of the border
+2nd. the style of the border. it can be
+    - solid
+    - dotted
+    - dashed  
+3rd value is the color
+
+what we need to understand is that this border property
+is known as a shorthand property
+it takes the values and applies them to each side 
+
+In css we have a couple of properties to define a 
+border on each side 
+
+like border-top, left, right, and bottom
+another thing we need to pay attention to is the order
+so if we moved border-top above border 
+border is going to override bordertop so the order matters
+
+##border-width:
+with this property we can specify the width of all of the borders 
+so remember this order:
+    top -> right -> bottom -> left 
+    this is the order of the values we are placing 
+
+*question what happens if we get rid of the value for the left border?
+    ans:
+        The browser will look at the right and set the left equal to that 
+
+same thing will happen if we remove the bottom it will look at the top 
+
+##border-radius:
+with the border radius we can make the borders round
+the more we increase the pixels the rounder the edges get 
+
+remmeber our trick if we have a square border if we set the radius to 
+100% we will get a circle 
+
+now we can make all kinds of shapes we just have to go here 
+and we can get some help
+
+https://css-tricks.com/the-shapes-of-css/
