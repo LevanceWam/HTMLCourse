@@ -1,0 +1,33 @@
+body{
+    margin: 10px;
+}
+
+/* getting the first letter in the element */
+p::first-letter{
+    font-size: 140%;
+    font-weight: bold;
+}
+
+/* first line in element  */
+p::first-line{
+    font-weight:bold;
+}
+
+/* when we select text by clicking and dragging */
+/* this is only applied to paragraphs */
+/* if we get rid of the p all the selected elements will be pink */
+::selection{
+    background-color: pink;
+}
+
+/* inserting content before this element */
+/* convertig this element to a block element  */
+p::before{
+    content: "...";
+    display: block;
+}
+
+/* inserts content after this element  */
+p::after{
+    content: "..."; 
+}

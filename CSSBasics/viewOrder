@@ -4,6 +4,7 @@ BasicSelectors
 RelationalSelectors
 Psuedo-classSelectors
 Psuedo-elementSelectors
+SelectorSpecificity
 Inheritance
 Colors
 Gradients
