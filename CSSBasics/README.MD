@@ -73,3 +73,45 @@ body {
 a[target] {
 }
 ```
+
+## Relational Selectors
+
+Relational selectors are those selectors which bear resemblence in relationship just like humans. These selectors constitute Descendant Selector, Direct Child Selector, Sibling Selector and Next Sibling Selector.
+
+they help us write cleaner markup, but there are 2 problems with relational markup we need to know about.
+
+1. They can be fragile.
+   This is because they are dependant on the location of the elements in the dom so of the elements are
+   moved things will break
+
+2. They are not as fast as basic selectors
+   We aren't going to be worried about this and the changes are not "noticable". we can't tell the difference.
+
+   This is depenedant on how the browser renders these selector
+   the browser reads this from right to left so it will get all of the
+   paragraph elements first then it checks to see if that element comes after the section with the id
+
+```css
+/* here we are combining two different selectors */
+/* we call this a relational selector */
+/* this particular one is called a desecendant selector */
+/* this will affect any paragraph in the products section */
+#products p {
+  color: orange;
+}
+
+/* if we wanted to style only the first paragraph element in the section we can do this */
+#products > p {
+  color: steelblue;
+}
+
+/* this is going to select the paragraph element that is directly after the section */
+#products + p {
+  color: goldenrod;
+}
+
+/* this will affect all of the paragraphs outside of the section */
+#products ~ p {
+  color: steelblue;
+}
+```
