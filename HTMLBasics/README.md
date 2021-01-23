@@ -59,3 +59,58 @@ Now the italic and bold elements are deprecated elements that we use to use inst
 <!-- strong is used to show strong importance for its contents -->
 <p>I love to use <strong>HTML</strong>!</p>
 ```
+
+## HyperLinks
+
+To create links to other pages and sites we use the achor element <a>.
+Every achor element needs a href: (hypertext reference) attributes.
+In the href we can link to a relative or absolute url.
+
+_Question_:
+what is the difference between hyperlink and link?
+
+_Answer_:
+link is just the address, the url, the location of the target page. Hyperlink is the element the user can click on to navigate to the target page.
+
+### Relative urls
+
+A relative url starts from the current page. If the file was in a different folder this still counts as a relative url.
+
+In short, relative urls start from the current page and then it goes somewhere else.
+
+### Absolute urls
+
+There are times we are going to be working in heavily nested
+folders and to keep going a level up for our hyperlinks can be a little messy
+
+This is where we can use absolute urls
+so we start with a "/" this represents the root of the site
+
+```html
+<!-- linking another page on our website -->
+<!-- example of a relative url -->
+<a href="about.html">about me</a>
+
+<!-- another example of relative url -->
+<a href="company/company.html">company</a>
+
+<!-- linking to a image -->
+<!-- prompting the user to download it -->
+<!-- when the link is clicked download will start -->
+<a href="images/84683.jpg" download>Photo</a>
+
+<!-- adding a fragment to the link -->
+<a href="#section-css">CSS</a>
+
+<!-- this opens a new tab to google  -->
+<a href="https://www.google.com/" target="_blank">google</a>
+
+<!-- this will open the deafult mail application and set the email in the to field -->
+<a href="mailto:random@gmail.com">Email me</a>
+
+<!-- this opens a new tab to google  -->
+<a href="https://www.google.com/" target="_blank">google</a>
+
+<!-- absolute url -->
+<a href="/company/company.html"></a>
+```
