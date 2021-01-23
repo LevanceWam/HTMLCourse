@@ -27,6 +27,12 @@ we can give information about a webpage
 
   <!-- this meta element provides the description for the website on search engines -->
   <meta name="description" content="This is the description for this website" />
+
+  <!-- The title for the page -->
+  <title>Providing CSS</title>
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 ```
 
