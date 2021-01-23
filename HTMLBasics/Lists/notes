@@ -5,7 +5,7 @@ ul: unordered list
 ol: ordered list
 dl: description list
 
-the type we use three most is ul
+the type we use the most is ul
 this is used to showcase a list of items where the order does not matter
 
 a common application for this element is for implementing 

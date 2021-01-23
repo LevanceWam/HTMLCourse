@@ -66,10 +66,10 @@ To create links to other pages and sites we use the achor element <a>.
 Every achor element needs a href: (hypertext reference) attributes.
 In the href we can link to a relative or absolute url.
 
-_Question_:
+**Question**:
 what is the difference between hyperlink and link?
 
-_Answer_:
+**Answer**:
 link is just the address, the url, the location of the target page. Hyperlink is the element the user can click on to navigate to the target page.
 
 ### Relative urls
@@ -113,4 +113,47 @@ so we start with a "/" this represents the root of the site
 
 <!-- absolute url -->
 <a href="/company/company.html"></a>
+```
+
+## List
+
+In html we have 3 types of list elements:
+
+- ul: unordered list
+- ol: ordered list
+- dl: description list
+
+### ul
+
+The type we use the most is ul, this is used to showcase a list of items where the order does not matter.
+
+a common application for this element is for implementing a navigation menu.Quite often navigation menus are implemented using unordered list.
+
+### ol
+
+In contrast to a ul we have ol where the order of the items do matter. A real world example of this would be a recipe site.
+
+### dl
+
+we use a dl for implementing a glossary or displaying meta data. We can have a term and details about that term.
+
+```html
+<ul>
+  <!-- list item -->
+  <li>About me</li>
+  <li>courses</li>
+</ul>
+
+<ol>
+  <li>Preheat the oven</li>
+  <li>Place items on crust</li>
+  <li>put pizza in the oven</li>
+</ol>
+
+<dl>
+  <!-- description term -->
+  <dt>HTML</dt>
+  <!-- description detail to desrcibe the term -->
+  <dd>Hypertext Markup Language</dd>
+</dl>
 ```
