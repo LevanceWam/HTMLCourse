@@ -238,3 +238,50 @@ Another generic container element called span. which is often used to style text
                 explicabo dignissimos recusandae quiavitae, animi debitis optio quos alias.
     </p>
 ```
+
+## SemanticElements
+
+HTML5 introduced a couple of elements that are more descriptive or more meaningful. They are called Semantic Elements.
+
+Some of the semantic elements:
+
+- article
+- figure
+- mark
+- time
+
+Where ever possible we should use these new Elements. Instead of the generic containers because this helps search engines better understand our pages and what they contain.
+
+### Article element
+
+In html5 we have a element called article that is used to represent articles or post. We can use this element to make the markup more meaningful to search engines.
+
+Now the article does not need to be a blog post or newspaper article
+it can be: "An independent, self-contained content".
+
+### Figure
+
+The figure element is just a contianer for figuares. It does not have any visual characteristics. Figures can optionally have a caption it can be above or below the figure this is done with the figcaption element.
+
+```html
+<!-- using the article element to make the markup more meaningful to search engines  -->
+<article class="article">
+  <h1>heading</h1>
+  <p>
+    published <time datetime="2021-01-01 17:00">January 1, 2021 03:00pm</time>
+  </p>
+
+  <!-- highlights text -->
+  <p>
+    <mark>Lorem</mark> ipsum dolor sit amet consectetur, adipisicing elit.
+    Debitis, cum.
+  </p>
+
+  <!-- a contianer similar to div but with meaning  -->
+  <figure>
+    <img src="" alt="" />
+    <!-- figure caption -->
+    <figcaption>my coffee this morning</figcaption>
+  </figure>
+</article>
+```
