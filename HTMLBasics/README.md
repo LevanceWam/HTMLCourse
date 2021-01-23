@@ -4,6 +4,11 @@
 
 In this section we are going to go over all of the essential HTML elements to build web pages.
 
+## Concepts and Principles
+
+**DRY principle**:
+DRY -> Don't Repeat Yourself.
+
 ## Head Section
 
 In the head section we have a couple of meta elements for giving information about this web page. The purpose of meta elements with these elements
@@ -156,4 +161,56 @@ we use a dl for implementing a glossary or displaying meta data. We can have a t
   <!-- description detail to desrcibe the term -->
   <dd>Hypertext Markup Language</dd>
 </dl>
+```
+
+## Tables
+
+To make tables we use the table element. In the past we useto use this for laying out pages. This is considered bad practice because we have better ways of doing this now.
+
+### Rows
+
+To define a row we use the tr element
+in this element we can have one or more cells which can be:
+
+- data cells
+- header cells
+
+Header cells are labels that describes what each column represents. All the other cells are known as data cells
+because they contain data.
+
+**Question**:
+What is the difference between header and data cells in terms of styling?
+
+**Ans**:
+The text is bold for the header and the text is align in the center. Where as the td is text align to the left.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <!-- setting the span of the column -->
+      <th colspan="2">expenses</th>
+    </tr>
+
+    <tr>
+      <!-- table header cell -->
+      <th>catergory</th>
+      <th>amount</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- the table row -->
+    <tr>
+      <!-- table data cell -->
+      <td>marketing</td>
+      <td>$100</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <th>total</th>
+    <th>300</th>
+  </tfoot>
+</table>
 ```
