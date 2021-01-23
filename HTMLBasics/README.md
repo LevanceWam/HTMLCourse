@@ -214,3 +214,27 @@ The text is bold for the header and the text is align in the center. Where as th
   </tfoot>
 </table>
 ```
+
+## Containers
+
+Quite often we need to group a bunch of elements for styling purposes. Containers are used a lot in web development especially for this purpose.
+
+In html we have a few container elements, the most commonly used one is div element (division). This element does not have any visual appearance. Even if we give it child elements it will still show nothing
+
+A div is something we call a block-level element. Block level elements always start on a new line and fill up the entire availiable space. CSS can easily change their width.
+
+Another generic container element called span. which is often used to style text, the span element is a like a div but it is not a block-level element div. A span element is a inline element so it is not going to take up the entire width of the page.
+
+```html
+<div class="product">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis hic aliquam dignissimos consequatur
+            ipsum iure quas, quis ducimus, sit culpa error necessitatibus enim? Porro corporis illo eum animi inventore?
+        </p>
+        <a href="#">link</a>
+    </div>
+
+    <p>
+        <span> class="highlight">Lorem,<span> ipsum dolor sit amet consectetur adipisicing elit. Quae architecto
+                explicabo dignissimos recusandae quiavitae, animi debitis optio quos alias.
+    </p>
+```
