@@ -228,3 +228,41 @@ p::after {
   content: "...";
 }
 ```
+
+## Selector Specificity
+
+Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+
+Specificity is a weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector. When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. As per CSS rules, directly targeted elements will always take precedence over rules which an element inherits from its ancestor.
+
+we have something called the specificity triangle, this is how it goes:
+
+- ID selector
+  this is because we can not have 2 elements with the same id
+  the id selector is very specific.
+
+- Class & Attribute selectors
+  these selectors are less specific because we can have multiple elements with the same class or attributes.
+
+- Element selectors  
+  because we can have many elements of a given type.
+
+**Question**:
+What will happen if we have 2 selectors with equal specificity or weight.
+
+**Ans**:
+The rule that comes last.
+
+**Question**:
+how do we prevent the id selector from overriding the element selector?
+
+Ans:
+there are 2 ways to do this
+
+    1. One solution is to use the important key word. We add it to the end of a property. when this key word is applied other rules are discarded.
+
+    So we want to avoid using this using the important keyword is consider a bad practice because it can make your css messy and hard to maintain.
+
+    2. The second solution would be to make a rule that has more weight to it than the one. this can be accomplished by adding more than one selector to a rule.
+
+    Another way to overide is if the element is inside of a container we can target the container then the child element.
