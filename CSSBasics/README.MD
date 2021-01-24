@@ -118,6 +118,8 @@ they help us write cleaner markup, but there are 2 problems with relational mark
 
 ## Psuedo-Class Selectors
 
+with Psuedo-Class Selectors we use :
+
 A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).
 
 For example, it can be used to:
@@ -135,7 +137,8 @@ Here are some of those selectors:
 - nth-child selector
 
 ```css
-* this is a psuedo class selector */ article :first-child {
+/* this is a psuedo class selector */
+article :first-child {
   font-size: 140%;
   font-style: italic;
 }
@@ -166,5 +169,62 @@ article p:last-child {
 /* this selector is like a function we can pass a value or agruement here to target certain elements */
 ul li:nth-child(odd) {
   color: salmon;
+}
+```
+
+## Psuedo-Element Selectors
+
+With Psuedo-Element Selectors we use ::
+
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s).
+
+For example, it can be used to:
+
+- Style the first letter, or line, of an element.
+- Insert content before, or after, the content of an element.
+
+Here are some of those selectors:
+
+- ::first-letter
+- ::first-line
+- ::selection
+- ::before
+- ::after
+
+**Question**:
+what is the difference between Psuedo-Element Selectors and Psuedo-Class Selectors?
+
+**Ans**:
+in a Psuedo-element we use it to style part of an element. e.g first letter. with Psuedo-classes we use them to style elements in a particular state. e.g hovered achor
+
+```css
+/* getting the first letter in the element */
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+/* first line in element  */
+p::first-line {
+  font-weight: bold;
+}
+
+/* when we select text by clicking and dragging */
+/* this is only applied to paragraphs */
+/* if we get rid of the p all the selected elements will be pink */
+::selection {
+  background-color: pink;
+}
+
+/* inserting content before this element */
+/* convertig this element to a block element  */
+p::before {
+  content: "...";
+  display: block;
+}
+
+/* inserts content after this element  */
+p::after {
+  content: "...";
 }
 ```
