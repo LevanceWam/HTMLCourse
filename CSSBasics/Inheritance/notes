@@ -4,7 +4,7 @@ One of the most important concepts in css that we need to
 understand is Inheritance.
 
 this means that some css properties by default 
-inherit values from there parent 
+inherit values from their parent 
 
 we are going to use a paragraph element and a strong element 
 as a example 

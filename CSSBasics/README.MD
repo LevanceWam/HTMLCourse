@@ -266,3 +266,9 @@ there are 2 ways to do this
     2. The second solution would be to make a rule that has more weight to it than the one. this can be accomplished by adding more than one selector to a rule.
 
     Another way to overide is if the element is inside of a container we can target the container then the child element.
+
+## Inheritance
+
+One of the most important concepts in css that we need to understand is Inheritance. This means that some css properties by default inherit values from their parent.
+
+Generally speaking the properties that deal with typography are the ones that are inherited, so property that change the font size weight etc.
