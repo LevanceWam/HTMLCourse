@@ -259,13 +259,11 @@ how do we prevent the id selector from overriding the element selector?
 Ans:
 there are 2 ways to do this
 
-    1. One solution is to use the important key word. We add it to the end of a property. when this key word is applied other rules are discarded.
+1. One solution is to use the important key word. We add it to the end of a property. when this key word is applied other rules are discarded. So we want to avoid using this using the important keyword is consider a bad practice because it can make your css messy and hard to maintain.
 
-    So we want to avoid using this using the important keyword is consider a bad practice because it can make your css messy and hard to maintain.
+2. The second solution would be to make a rule that has more weight to it than the one. this can be accomplished by adding more than one selector to a rule.
 
-    2. The second solution would be to make a rule that has more weight to it than the one. this can be accomplished by adding more than one selector to a rule.
-
-    Another way to overide is if the element is inside of a container we can target the container then the child element.
+Another way to overide is if the element is inside of a container we can target the container then the child element.
 
 ## Inheritance
 
