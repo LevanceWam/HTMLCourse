@@ -115,3 +115,56 @@ they help us write cleaner markup, but there are 2 problems with relational mark
   color: steelblue;
 }
 ```
+
+## Psuedo-Class Selectors
+
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).
+
+For example, it can be used to:
+
+- Style an element when a user mouses over it.
+- Style visited and unvisited links differently.
+- Style an element when it gets focus
+
+Here are some of those selectors:
+
+- first-child selector
+- first-of-type selector
+- last-of-type
+- last-child selector
+- nth-child selector
+
+```css
+* this is a psuedo class selector */ article :first-child {
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* this selector targets the first occurance of element types*/
+article :first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* this is going to get the first occurance of the element */
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* this targets the last paragraph element */
+article p:last-of-type {
+  font-style: bold;
+}
+
+/* does the same as the one above  */
+article p:last-child {
+  font-style: bold;
+}
+
+/* we want to get the odd items in the list  */
+/* this selector is like a function we can pass a value or agruement here to target certain elements */
+ul li:nth-child(odd) {
+  color: salmon;
+}
+```
